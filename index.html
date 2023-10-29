@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="user">
+            <img src="IMAGES/girl.jpg" alt="">
+            <h3 class="name">Apurva Shimpi</h3>
+            <p class="post">Full Stack Developer</p>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://drive.google.com/file/d/1aIRIMFevW8DhWAM8WTw5K04exraf_SMq/view?usp=drive_link"
+                        target="_blank">Resume</a></li>
+            </ul>
+        </nav>
+        <div class="con">
+            <a href="https://github.com/ShimpiApurva"><i class="fa-brands fa-github"></i></a>
+            <a href="www.linkedin.com/in/apurva-shimpi"><i class="fa-brands fa-linkedin"></i></a>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </header>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+
+    <section class="home" id="home">
+        <h3>HI THERE !</h3>
+        <h1>I'M <span>Apurva Shimpi</span></h1>
+        <p>Hello, I'm Apurva Uday Shimpi, a passionate learner and aspiring web developer. I am currently pursuing my
+            Master's in Computer Applications (MCA), where I am delving into the fascinating world of computer science
+            and software development. </p>
+        <a href="#about"><button class="btn">About me <i class="fa-solid fa-user"></i></button></a>
+    </section>
+
+    <section class="about" id="about">
+        <h1 class="heading"><span>About</span> me</h1>
+        <div class="row">
+            <div class="info">
+                <p>Welcome to my web development portfolio! I'm Apurva Shimpi, and I'm dedicated to showcasing my
+                    passion for web development through a collection of exciting projects.
+                </p>
+                <p> My journey in web development began with a curiosity for crafting digital experiences, and it has
+                    since evolved into a strong commitment to creating functional, user-friendly, and visually appealing
+                    websites and web applications.</p>
+                <p> Currently, I'm deeply immersed in a range of exciting projects that not only reflect my expertise
+                    but also my commitment to staying at the forefront of web development.</p>
+            </div>
+            <div class="counter">
+                <div class="list">
+                    <button class="btn">Software Engineer</button>
+                    <button class="btn">Web Developer</button>
+                    <button class="btn">Database Management</button>
+                    <button class="btn">Quick Learner</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h1 class="heading">My <span>Projects</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <a href="https://github.com/ShimpiApurva/Students-Space-Project"><img src="IMAGES/img.png"
+                        alt="img"></a>
+                <h3>Student's Space</h3>
+                <p>web development</p>
+            </div>
+
+
+            <div class="box">
+                <a href="https://github.com/ShimpiApurva/Weather-App"><img src="IMAGES/download.jfif" alt="img"></a>
+                <h3>Weather Forcasting</h3>
+                <p>web development</p>
+            </div>
+
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>Contact</span> me</h1>
+
+        <div class="row">
+            <div class="content">
+                <h3 class="title">Contact Info</h3>
+
+                <div class="info">
+                    <h3><i class="fa-solid fa-envelope"></i> apurvashimpi23@gmail.com</h3>
+                    <h3><i class="fa-solid fa-phone"></i> +918626033071</h3>
+                    <h3><i class="fa-solid fa-location-dot"></i> Nashik,Maharashtra</h3>
+
+                </div>
+            </div>
+            <form>
+                <input type="text" id="name" placeholder="Name" class="box">
+                <input type="text" id="email" placeholder="Email" class="box">
+                <input type="text" id="project" placeholder="Project" class="box">
+                <textarea name="" id="message" cols="30" rows="10" class="box message" placeholder="Message"></textarea>
+                <button type="submit" class="btn" onclick="sendEmail()">Send To</button>
+
+            </form>
+        </div>
+    </section>
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="JS/script.js"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("iQh0Nvw2jz9OYXES2");
+   })();
+</script>
+
+</html>
